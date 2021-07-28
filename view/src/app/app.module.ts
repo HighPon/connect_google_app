@@ -8,17 +8,22 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatFormFieldModule} from '@angular/material/form-field';
-import { LeftBarComponent } from './left-bar/left-bar.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { PrimaryHeaderComponent } from './primary-header/primary-header.component';
 import { NavbarHeaderComponent } from './navbar-header/navbar-header.component';
+import {MatListModule} from '@angular/material/list';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatButtonModule } from '@angular/material/button';
+import { LeftBarComponent } from './left-bar/left-bar.component';
+import { MatRadioModule } from '@angular/material/radio';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LeftBarComponent,
     PrimaryHeaderComponent,
     NavbarHeaderComponent,
+    LeftBarComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,6 +34,12 @@ import { NavbarHeaderComponent } from './navbar-header/navbar-header.component';
     MatDatepickerModule,
     MatFormFieldModule,
     MatSidenavModule,
+    MatListModule,
+    LayoutModule,
+    MatButtonModule,
+    MatRadioModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

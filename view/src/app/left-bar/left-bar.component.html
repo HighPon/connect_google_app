@@ -1,6 +1,14 @@
-<p>left-bar works!</p>
-<mat-drawer-container class="example-container">
-    <mat-drawer mode="side" opened>Drawer content</mat-drawer>
-    <mat-drawer-content>Main content</mat-drawer-content>
-  </mat-drawer-container>
-  
+<app-primary-header [selectedTitle]="selectedValue"></app-primary-header>
+
+
+<mat-sidenav-container class="example-container" >
+  <mat-sidenav mode="side" opened class="left-side">
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-nav-list *ngFor="let item of a">
+      <a mat-list-item routerLink="/{{ item }}" (click)="onClick(item)">{{ item }}</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>Main content</mat-sidenav-content>
+</mat-sidenav-container>
+
+
