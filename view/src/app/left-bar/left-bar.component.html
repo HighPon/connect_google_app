@@ -5,7 +5,9 @@
   <mat-sidenav mode="side" opened class="left-side">
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list *ngFor="let item of a">
-      <a mat-list-item routerLink="/{{ item }}" (click)="onClick(item)">{{ item }}</a>
+      <a mat-list-item routerLink="/{{ item }}" (click)="onClick(item)">
+        {{ item }}
+      </a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>Main content</mat-sidenav-content>
